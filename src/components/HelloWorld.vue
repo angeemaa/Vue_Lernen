@@ -1,16 +1,15 @@
 <template>
     <div>
-        <p></p>
+        <p>{{ idUebergabe }}</p>
     </div>
 </template>
 
 <script>
 export default {
-    
+props:{
+  idUebergabe:String
+
+}    
 
 }
 </script>
-
-<style>
-
-</style>
