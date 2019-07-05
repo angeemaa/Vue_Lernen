@@ -8,7 +8,7 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [{
-      path: '/',
+      path: '/:id/:andere',
       name: 'home',
       component: Home
     },
