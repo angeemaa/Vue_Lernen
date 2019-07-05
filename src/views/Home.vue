@@ -3,7 +3,7 @@
     <p>{{ routeID }}</p>
     <p>{{ routeID2 }}</p>
     <!--: damit er weiß das eine Variable übergeben wird-->
-    <HelloWorld :idUebergabe="routeID"></HelloWorld>
+    <HelloWorld :idUebergabe="routeID+' via Prop'"></HelloWorld>
   </div>
 </template>
 <script>
@@ -14,9 +14,9 @@ export default {
   },
   data() {
     return {
-      //Ausgabe: in der URL nach dem / (Slash) 
-      routeID: this.$route.params.id, 
-      routeID2: this.$route.params.andere 
+      //Ausgabe: in der URL nach dem / (Slash)
+      routeID: this.$route.params.id,
+      routeID2: this.$route.params.andere
 
     };
   }
